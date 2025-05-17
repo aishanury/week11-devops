@@ -18,11 +18,6 @@ jobs:
       - name: Set up Docker Build
         uses: docker/setup-buildx-action@v3
 
-      - name: Build and test
-        uses: docker/build-push-action@v6
-        with:
-          load: true
-
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
